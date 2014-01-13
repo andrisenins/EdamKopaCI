@@ -1,0 +1,38 @@
+@CHARSET "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic|Exo+2:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext,cyrillic);
+
+/*
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Exo 2', sans-serif;
+*/
+
+
+
+/* MONITOR 14'' */
+@media(max-width: 1366px) {
+
+}
+
+/*
+
+/* SMARTPHONE *//*
+@media screen and (max-width: 320px) {
+	
+}
+
+/* TABLET vertical*//*
+@media screen and (max-width: 768px) {
+	
+}
+
+/* TABLET horizontal *//*
+@media screen and (max-width: 1024px) {
+	
+}
+
+/* MONITOR *//*
+@media screen and (max-width: 1680px) {
+	
+}
+
+*/
