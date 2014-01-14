@@ -20,13 +20,13 @@ class Filter extends CI_Controller {
         $this->load->view('filter_form');
     }
 
-    public function execute_filter()
+    public function filter_search()
     {
         // Retrieve the posted filter term.
-        $filter_term = $this->input->post('filter');
-        if($filter_term==NULL){
+        $filter_term = $this->input->post('search');
+        /*if($filter_term==NULL){
             redirect('recipes');
-        }
+        }*/
         // Use a model to retrieve the results.
         $data['results'] = $this->filter_model->get_results($filter_term);
         // Pass the results to the view.

@@ -29,10 +29,10 @@ $this->load->library('session');
 			</div>
                         <?php endforeach; ?>
 		</div>
-		<div id="sec_one_2" class="sectionParting leftFloat">
+		<!--<div id="sec_one_2" class="sectionParting leftFloat">
 			Filtri
 		 
-		</div>
+		</div>-->
 	</div>
 </section>
  <?php                               

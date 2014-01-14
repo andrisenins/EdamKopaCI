@@ -15,7 +15,7 @@ class Filter_model extends CI_Model {
 
         // Execute the query.
         $query = $this->db->get();
-
+        //print_r($this->db->last_query());
         // Return the results.
         return $query->result_array();
     }

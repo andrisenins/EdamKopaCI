@@ -1,1 +1,3 @@
-<h1>Wiii success</h1>
+<?php
+redirect(recipes);
+?>

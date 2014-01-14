@@ -7,11 +7,12 @@
 	<div  id="sec_one">
 		<div id="sec_one_1" class="sectionParting leftFloat">
                     <center><h1>Pieslēdzies www.edamkopa.lv</h1></center>
+                    <center><?php echo validation_errors(); ?></center>
                     <div id='loginBorder'>
                         <?php
                         echo form_open('main/login_validation'); 
 
-                        echo validation_errors();
+                        
 
                         echo "<p>Lietotājvārds:<br />";
                         echo form_input('username', $this->input->post('username'));        
@@ -23,7 +24,7 @@
 
                         echo "<p id='submitbutton'>";
                        // $attributes = 'class = "login_input" id="login_submit"';
-                        echo form_submit('login_submit', 'Login'/*, $attributes*/);        
+                        echo form_submit('login_submit', 'Ieiet'/*, $attributes*/);        
                         echo "</p>";
                         echo form_close(); ?>
                         <p><a id='regLinks' href='<?php echo base_url()."main/signup"; ?>'>Reģistrēties!</a></p>

@@ -159,7 +159,6 @@ animation-iteration-count: infinite;
     outline: none;
  }
  
-C
 
 #search_button:hover{
 	cursor: pointer;
@@ -310,7 +309,7 @@ C
 #reg_submit, #reg_check{
     color: white;
     font-weight: 900;
-	background: rgba(35,32,18, 0.8);
+	background: rgb(35,32,18);
 	padding: 0.5% 0%;
 	font-size: 80%;
 	width: 15%;
@@ -530,17 +529,18 @@ footer .spanline{
  [value="Veikt jaunu receptes ierakstu"] {
 	width: 54%;
 	color: white;
-    font-weight: 700;
-	background: rgba(35,32,18, 0.8);
+        font-weight: 700;
+	background: rgb(35,32,18);
 	border: none;
 	margin: 0%;
 	padding: 0.78% 0%;
 	vertical-align: middle;
+        border: 2px solid rgba(35,32,18, 0.6);
 }
 [value="Veikt jaunu receptes ierakstu"]:hover{
 	cursor: pointer;
 	background: rgba(255,255,255, 0.6);
-	color: rgba(35,32,18, 0.8);
+	color: rgb(35,32,18);
 }
 
 [value="Veikt jaunu receptes ierakstu"]:focus{
@@ -557,19 +557,20 @@ footer .spanline{
 	vertical-align: middle;
  }
  [name="login_submit"] {
- 		width: 54%;
+ 	width: 54%;
 	color: white;
-    font-weight: 700;
-	background: rgba(35,32,18, 0.8);
+        font-weight: 700;
+	background: rgb(35,32,18);
 	border: none;
 	margin: 0%;
 	padding: 0.78% 0%;
 	vertical-align: middle;
+        border: 2px solid rgba(35,32,18, 0.6);
  }
  [name="login_submit"]:hover{
 	cursor: pointer;
-	background: rgba(255,255,255, 0.6);
-	color: rgba(35,32,18, 0.8);
+	background: rgb(255,255,255);
+	color: rgb(35,32,18);
 }
 
 [name="login_submit"]:focus{

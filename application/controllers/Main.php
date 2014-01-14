@@ -91,24 +91,25 @@ class Main extends CI_Controller {
                  $this->load->model('model_users');
                  $this->email->set_newline("\r\n");
 
-                 $this->email->from('andrisenins@googlemail.com', 'Andris');
+                 $this->email->from('andrisenins@googlemail.com', 'Ēdam kopā');
                  $this->email->to($this->input->post('email'));
 
-                 $this->email->subject("Confirm your account.");
-                 $message = "<p>Thank you for signing up!</p>";
-                 $message .= "<p><a href='".base_url()."main/register_user/$key'>Click here </a> to confirm your account </p>";
+                 $this->email->subject("Apstiprini reģistrāciju");
+                 $message = "<p>Paldies par reģistrāciju!</p>";
+                 $message .= "<p><a href='".base_url()."main/register_user/$key'>Spied šeit</a>, lai pabeigtu reģistrāciju.</p>";
                  
                  $this->email->message($message);
                  
                  //send and email to the user
                  if($this->model_users->add_temp_users($key)) {
                     if($this->email->send()) {
-                        echo "The email has been sent!";
+                        echo "Apstiprināšanas e-pasts ir nosūtīts!";
+                        $this->output->set_header('refresh:5;url=/recipes/');
                     } else {
-                        echo "could not send email!";
+                        echo "E-pastu nesanāca nosūtīt!";
                     }
                  }  else {
-                     echo "problem adding to database.";                     
+                     echo "Datubāzes problēma.";                     
                  }
              }else {
                  echo "You shall not pass! >:(";
@@ -119,15 +120,14 @@ class Main extends CI_Controller {
              
              
          }
-         //echo $this->input->post('username');
-            
+          
             public function validate_credentials(){
                 $this->load->model('model_users');
                 
                 if($this->model_users->can_log_in()){
                     return true;
                 }  else {
-                    $this->form_validation->set_message('validate_credentials', 'Incorrect username/password.');
+                    $this->form_validation->set_message('validate_credentials', 'Nepareizs lietotājvārds/parole.');
                     return false;
                 }
             }
@@ -150,10 +150,10 @@ class Main extends CI_Controller {
                         $this->session->set_userdata($data);
                         redirect('main/members');
                     }  else {
-                        echo "failed to add user, please try again.";
+                        echo "Tev nesanāca pievienot lietotāju, mēgini vēlreiz :(";
                     }
                 }  else {
-                    echo 'invalid key';
+                    echo 'Tava atslēga neder mūsu slēdzenei.';
                 }
             }
         

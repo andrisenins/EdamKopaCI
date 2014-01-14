@@ -11,7 +11,7 @@
                                  <?php                               
                                     $this->load->view('recipes/create');
                                     ?>
-                               <a href="<?php echo base_url().'main/logout' ?>">Iziet</a> 
+                               <a id='regLinks' href="<?php echo base_url().'main/logout' ?>">Iziet</a> 
                             </div>
 			</div>
 		</div>
