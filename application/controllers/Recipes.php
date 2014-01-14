@@ -34,8 +34,8 @@ class Recipes extends CI_Controller {
 
                 $this->load->view('recipes/view', $data);
 	}
-        
-        public function create()
+
+                public function create()
         {
                 $this->load->helper('form');
                 $this->load->library('form_validation');

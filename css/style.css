@@ -159,16 +159,7 @@ animation-iteration-count: infinite;
     outline: none;
  }
  
- #search_button{
-	width: 4%;
-	color: white;
-    font-weight: 900;
-	background: rgba(35,32,18, 0.8);
-	border: none;
-	margin: 0%;
-	padding: 0.78% 0%;
-	vertical-align: middle;
-}
+C
 
 #search_button:hover{
 	cursor: pointer;
@@ -466,6 +457,12 @@ footer .spanline{
 	font-weight: 900;
 	margin: 0% 1%;
 }
+#go-to-top {
+	color: white;
+}
+#go-to-top:visited {
+	color: white;
+}
 
 #copyright{
 	position: fixed;
@@ -511,3 +508,70 @@ footer .spanline{
 #regLinks:hover {
 	color: rgba(35,32,18, 0.8);
 }
+[name=search_submit] {
+	width: 14%;
+	color: white;
+    font-weight: 900;
+	background: rgba(35,32,18, 0.8);
+	border: none;
+	margin: 0%;
+	padding: 0.78% 0%;
+	vertical-align: middle;
+}
+[name=search_submit]:hover{
+	cursor: pointer;
+	background: rgba(255,255,255, 0.6);
+	color: rgba(35,32,18, 0.8);
+}
+
+[name=search_submit]:focus{
+    outline: none;
+ }
+ [value="Veikt jaunu receptes ierakstu"] {
+	width: 54%;
+	color: white;
+    font-weight: 700;
+	background: rgba(35,32,18, 0.8);
+	border: none;
+	margin: 0%;
+	padding: 0.78% 0%;
+	vertical-align: middle;
+}
+[value="Veikt jaunu receptes ierakstu"]:hover{
+	cursor: pointer;
+	background: rgba(255,255,255, 0.6);
+	color: rgba(35,32,18, 0.8);
+}
+
+[value="Veikt jaunu receptes ierakstu"]:focus{
+    outline: none;
+ }
+ [name="search"] {
+ 		width: 30%;
+	margin:0%;
+	padding: 0.4%;
+	border: 3px solid rgba(35,32,18, 0.6);
+	position: relative;
+	background-color: rgba(255,255,255, 0.9);
+	background-clip: padding-box;
+	vertical-align: middle;
+ }
+ [name="login_submit"] {
+ 		width: 54%;
+	color: white;
+    font-weight: 700;
+	background: rgba(35,32,18, 0.8);
+	border: none;
+	margin: 0%;
+	padding: 0.78% 0%;
+	vertical-align: middle;
+ }
+ [name="login_submit"]:hover{
+	cursor: pointer;
+	background: rgba(255,255,255, 0.6);
+	color: rgba(35,32,18, 0.8);
+}
+
+[name="login_submit"]:focus{
+    outline: none;
+ }

@@ -5,11 +5,11 @@
 	</div>
 	<div id="menu">
 		<a href="<?php echo site_url('recipes');?>" title="Receptes" id="one">Receptes</a>
-                <a id="logpop" href="<?php echo site_url('main/login');?>" title="Pieslēgties">Jauna recepte</a>	
-		<a href="<?php echo site_url('main/signup');?>" title="Reģistrēties" id="two" >Reģistrēties</a>
+                	
+		<a href="<?php echo site_url('main/members');?>" title="Jauna recepte" id="two" >Jauna recepte</a>
+                <a id="logpop" href="<?php echo base_url().'main/logout' ?>" title="Izlogoties">Iziet</a>
 		<div>
-                    
-					<?php $this->load->view('search_form'); ?>
+			<?php $this->load->view('search_form'); ?>
 		</div>
 	</div>
 </nav>

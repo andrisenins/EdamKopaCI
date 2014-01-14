@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Members page</title>
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'css/bootstrap.css' ?>" />
-</head>
-<body>
+<?php
+    $this->load->view('templates/header');
+    $this->load->view('templates/navbar_forMembersRecipeMaking');
+    ?>
+<section>
 
-<div id="container">
-	<h1>Members page</h1>
+	<div  id="sec_one">
+		<div id="sec_one_1" class="sectionParting leftFloat">
+			
+                            <div class="rec_small_text">
+                                 <?php                               
+                                    $this->load->view('recipes/create');
+                                    ?>
+                               <a href="<?php echo base_url().'main/logout' ?>">Iziet</a> 
+                            </div>
+			</div>
+		</div>
+	</div>
+</section>
+
         
 
-        <a href="<?php echo base_url().'main/logout' ?>">logout</a>
-</div>
 
-</body>
-</html>
+ <?php                               
+$this->load->view('templates/footer');
+

@@ -1,6 +1,14 @@
 <?php
+$this->load->library('session');
     $this->load->view('templates/header');
-    $this->load->view('templates/navbar');?>
+        if ($this->session->userdata('is_logged_in')) {
+            $this->load->view('templates/navbar_forMembers');
+        } else {$this->load->view('templates/navbar');
+            }
+    
+    
+    $this->load->helper('text');
+?>
     <section>
 
 	<div  id="sec_one">

@@ -1,6 +1,12 @@
 <?php
+$this->load->library('session');
     $this->load->view('templates/header');
-    $this->load->view('templates/navbar');
+        if ($this->session->userdata('is_logged_in')) {
+            $this->load->view('templates/navbar_forMembers');
+        } else {$this->load->view('templates/navbar');
+            }
+    
+    
     $this->load->helper('text');
 ?>
 <section>
@@ -15,7 +21,7 @@
                                <!-- <p><?php echo $recipes_item['text'] ?></p>-->
                                 <?php
                                 $string = $recipes_item['text'];
-                                $string = word_limiter($string,80);
+                                $string = word_limiter($string,40);
                                 echo $string;
                                 ?>
                                 <p><a href="<?php echo site_url('recipes/view/' . $recipes_item['slug']); ?>">Turpināt lasīt</a></p>
