@@ -84,7 +84,7 @@ class Main extends CI_Controller {
                      'smtp_host' => 'ssl://smtp.googlemail.com',
                      'smtp_port' => 465,
                      'smtp_user' => 'andrisenins@googlemail.com',
-                     'smtp_pass' => 'a8ne6uks',
+                     'smtp_pass' => 'xxx',
                      'mailtype' => 'html'
                  );
                  $this->load->library('email', $config_array);
